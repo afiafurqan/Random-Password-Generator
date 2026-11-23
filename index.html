@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Random Password Generator</h1>
+
+        <div class="password-box">
+            <input type="text" id="password" placeholder="Generate a password" readonly>
+
+            <button id="copyBtn" title="Copy Password">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="22" height="22" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round"
+                     stroke-linejoin="round">
+                    <rect x="8" y="8" width="13" height="13" rx="2"/>
+                    <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>
+                </svg>
+            </button>
+        </div>
+
+        <button class="generate-btn" id="generateBtn">
+            Generate Password
+        </button>
+
+        <div class="notification" id="notification">
+            Password copied successfully!
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
